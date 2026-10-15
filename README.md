@@ -24,8 +24,12 @@ so the first time macOS says it "can't be verified":
 
 Shortcut: paste this into Terminal once: `xattr -cr "/Applications/Card Studio.app"`
 
-**Linux:** For the AppImage, right-click → Properties → allow executing, then double-click it. Or install the `.deb`
-(`sudo apt install ./Card-Studio-*.deb`).
+**Linux (Ubuntu/Debian, recommended):** install the `.deb`: `sudo apt install ./Card-Studio-*.deb`. Then open **Card Studio**
+from the app menu.
+
+**Linux (other distros) — AppImage:** `chmod +x Card-Studio-*.AppImage`, then run it. If nothing happens:
+- `libfuse2` is missing: `sudo apt install libfuse2` (it's called `libfuse2t64` on Ubuntu 24.04).
+- On Ubuntu 23.10 and newer, start it with `./Card-Studio-*.AppImage --no-sandbox` (the system blocks Chromium's sandbox for AppImages).
 
 ## Your data
 Everything is saved on your computer and kept when you update or reinstall. In the app, **File → Open data folder** shows the folder;
