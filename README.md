@@ -4,15 +4,17 @@ ID card design, database and printing software for Windows, macOS and Linux.
 No account needed, works offline, and your data stays on your own computer.
 
 ## ⬇ Download
-Open **[Releases → Latest](../../releases/latest)** and download the file for your computer:
+Click the link for your computer. These links always give the latest version.
 
-| Computer | File |
+| Computer | Download |
 |---|---|
-| Windows 10/11 | `Card-Studio-x.y.z-win-x64.exe` |
-| Mac with Apple chip (M1/M2/M3/M4) | `Card-Studio-x.y.z-mac-arm64.dmg` |
-| Mac with Intel chip | `Card-Studio-x.y.z-mac-x64.dmg` |
-| Linux (any) | `Card-Studio-x.y.z-linux-x86_64.AppImage` |
-| Ubuntu / Debian | `Card-Studio-x.y.z-linux-amd64.deb` |
+| Windows 10/11 | [Card-Studio-win-x64.exe](https://github.com/equserteam/card-studio-releases/releases/latest/download/Card-Studio-win-x64.exe) |
+| Mac with Apple chip (M1/M2/M3/M4) | [Card-Studio-mac-arm64.dmg](https://github.com/equserteam/card-studio-releases/releases/latest/download/Card-Studio-mac-arm64.dmg) |
+| Mac with Intel chip | [Card-Studio-mac-x64.dmg](https://github.com/equserteam/card-studio-releases/releases/latest/download/Card-Studio-mac-x64.dmg) |
+| Ubuntu / Debian | [Card-Studio-linux-amd64.deb](https://github.com/equserteam/card-studio-releases/releases/latest/download/Card-Studio-linux-amd64.deb) |
+| Linux (any) | [Card-Studio-linux-x86_64.AppImage](https://github.com/equserteam/card-studio-releases/releases/latest/download/Card-Studio-linux-x86_64.AppImage) |
+
+Not sure which Mac you have? Apple menu → **About This Mac**: "Apple M…" means Apple chip, "Intel" means Intel.
 
 ## Install
 **Windows:** Run the `.exe`. If you see "Windows protected your PC", click **More info → Run anyway**.
@@ -24,12 +26,12 @@ so the first time macOS says it "can't be verified":
 
 Shortcut: paste this into Terminal once: `xattr -cr "/Applications/Card Studio.app"`
 
-**Linux (Ubuntu/Debian, recommended):** install the `.deb`: `sudo apt install ./Card-Studio-*.deb`. Then open **Card Studio**
+**Linux (Ubuntu/Debian, recommended):** install the `.deb`: `sudo apt install ./Card-Studio-linux-amd64.deb`. Then open **Card Studio**
 from the app menu.
 
-**Linux (other distros) — AppImage:** `chmod +x Card-Studio-*.AppImage`, then run it. If nothing happens:
+**Linux (other distros) — AppImage:** `chmod +x Card-Studio-linux-x86_64.AppImage`, then run it. If nothing happens:
 - `libfuse2` is missing: `sudo apt install libfuse2` (it's called `libfuse2t64` on Ubuntu 24.04).
-- On Ubuntu 23.10 and newer, start it with `./Card-Studio-*.AppImage --no-sandbox` (the system blocks Chromium's sandbox for AppImages).
+- On Ubuntu 23.10 and newer, start it with `./Card-Studio-linux-x86_64.AppImage --no-sandbox` (the system blocks Chromium's sandbox for AppImages).
 
 ## Your data
 Everything is saved on your computer and kept when you update or reinstall. In the app, **File → Open data folder** shows the folder;
