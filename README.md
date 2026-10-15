@@ -17,8 +17,12 @@ Open **[Releases → Latest](../../releases/latest)** and download the file for 
 ## Install
 **Windows:** Run the `.exe`. If you see "Windows protected your PC", click **More info → Run anyway**.
 
-**Mac:** Open the `.dmg` and drag **Card Studio** to **Applications**. The first time, **right-click the app → Open → Open**.
-If macOS says the app is "damaged", run this in Terminal: `xattr -cr "/Applications/Card Studio.app"`
+**Mac:** Open the `.dmg` and drag **Card Studio** to **Applications**, then open it. The app isn't notarized by Apple yet,
+so the first time macOS says it "can't be verified":
+1. Click **Done**, then open **System Settings → Privacy & Security**.
+2. Scroll down to *"Card Studio" was blocked* and click **Open Anyway**. Confirm with your password.
+
+Shortcut: paste this into Terminal once: `xattr -cr "/Applications/Card Studio.app"`
 
 **Linux:** For the AppImage, right-click → Properties → allow executing, then double-click it. Or install the `.deb`
 (`sudo apt install ./Card-Studio-*.deb`).
